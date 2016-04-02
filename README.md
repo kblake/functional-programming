@@ -16,11 +16,13 @@ Material to introduce functional programming using the Elixir language
 ## OOP limitations
 ```
 [W]e’re going to be living in a multicore, distributed, concurrent — all the buzz words — world. 
-The conventional models we’ve been doing, the OO stuff… is not going to survive in that kind of environment.” - Dave Thomas
+The conventional models we’ve been doing, the OO stuff… is not going to survive in that 
+kind of environment.” - Dave Thomas
 ```
 ```
-“OOP promised a cure for the scourge of software complexity. …its weaknesses have become increasingly apparent. 
-Spreading state all over the place leads to concurrency issues and unpredictable side effects.” - Dave Thomas
+“OOP promised a cure for the scourge of software complexity. …its weaknesses have become 
+increasingly apparent. Spreading state all over the place leads to concurrency issues 
+and unpredictable side effects.” - Dave Thomas
 ```
 ## Think in Functions not Objects
 * Functions
@@ -59,9 +61,10 @@ Spreading state all over the place leads to concurrency issues and unpredictable
  
 # Elixir
 ```
-“Elixir is a dynamic, functional language designed for building scalable and maintainable applications.
-Elixir leverages the Erlang VM, known for running low-latency, distributed and fault-tolerant systems, 
-while also being successfully used in web development and the embedded software domain.” - http://elixir-lang.org
+“Elixir is a dynamic, functional language designed for building scalable and 
+maintainable applications. Elixir leverages the Erlang VM, known for running low-latency, 
+distributed and fault-tolerant systems, while also being successfully used in web development 
+and the embedded software domain.” - http://elixir-lang.org
 ```
 
 ## Code Examples
