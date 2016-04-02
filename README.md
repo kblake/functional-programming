@@ -75,7 +75,7 @@ and the embedded software domain.” - http://elixir-lang.org
   * `=` is a match operator
   * https://github.com/kblake/functional-programming/tree/master/code/pattern_matching
 * **Multi-bodied functions**
-  * link to code example
+  * https://github.com/kblake/functional-programming/tree/master/code/multiple_bodies
 * **Higher-order functions**
   * link to code example
 * **Immutability vs State**
