@@ -68,7 +68,7 @@ and the embedded software domain.” - http://elixir-lang.org
 ```
 
 ## Code examples highlighting functional concepts
-* **Anonymous functions**
+* **Anonymous/First-class functions**
   * link to code example
 * **Pattern Matching**
   * link to code example
