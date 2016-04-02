@@ -71,7 +71,9 @@ and the embedded software domain.” - http://elixir-lang.org
 * **Anonymous/First-class functions**
   * https://github.com/kblake/functional-programming/tree/master/code/anonymous
 * **Pattern Matching**
-  * link to code example
+  * Not an assignment operator but an assertion
+  * `=` is a match operator
+  * https://github.com/kblake/functional-programming/tree/master/code/pattern_matching
 * **Multi-bodied functions**
   * link to code example
 * **Higher-order functions**
