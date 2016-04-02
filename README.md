@@ -69,7 +69,7 @@ and the embedded software domain.” - http://elixir-lang.org
 
 ## Code examples highlighting functional concepts
 * **Anonymous/First-class functions**
-  * link to code example
+  * https://github.com/kblake/functional-programming/tree/master/code/anonymous
 * **Pattern Matching**
   * link to code example
 * **Multi-bodied functions**
