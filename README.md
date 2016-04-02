@@ -25,24 +25,24 @@ increasingly apparent. Spreading state all over the place leads to concurrency i
 and unpredictable side effects.” - Dave Thomas
 ```
 ## Think in Functions not Objects
-* Functions
+* **Functions**
   * Easy to reason about
   * reliable
   * pure
-* Data transformation
+* **Data transformation**
   * ie. Unix pipes - `cat foo.log | grep bar | wc -l`
-* No side-effects
+* **No side-effects**
   * Side effects are:
     * modifying state
     * has observable interaction with external functions
-* Immutability
+* **Immutability**
   * Immutable data is known data
   * Data that is created is not changed
   * Copy and alter
     * Compilers can perform optimizations because of this
     * Garbage collectors are smart about this
   * Avoid race conditions
-* Higher-order functions
+* **Higher-order functions**
   * Functions can receive functions as arguments and return functions
 * Where is my *for* loop?
   * map, reduct, filter, reject, take, etc.
@@ -67,10 +67,25 @@ distributed and fault-tolerant systems, while also being successfully used in we
 and the embedded software domain.” - http://elixir-lang.org
 ```
 
-## Code Examples
+## Code examples highlighting functional concepts
+* **Anonymous functions**
+  * link to code example
+* **Pattern Matching**
+  * link to code example
+* **Multi-bodied functions**
+  * link to code example
+* **Higher-order functions**
+  * link to code example
+* **Immutability vs State**
+  * link to code example
+* **Composition**
+  * link to code example
+* **Enumerables**
+  * link to code example
+* **...and more!!**
+  * link to code example
 
-
-# Sources
+## Sources
 * http://nerd.kelseyinnis.com/blog/2012/12/17/slides-from-learning-functional-programming-without-growing-a-neckbeard/
 * http://reactivex.io/learnrx/
 * https://medium.com/@jugoncalves/functional-programming-should-be-your-1-priority-for-2015-47dd4641d6b9#.dzkjdoldo
