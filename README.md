@@ -47,7 +47,7 @@ and unpredictable side effects.” - Dave Thomas
 * Where is my *for* loop?
   * map, reduct, filter, reject, take, etc.
 
-## Some (impure and pure) Functional languages
+## Some (impure and pure) functional languages
 * LISP
 * Scheme
 * Clojure
@@ -67,7 +67,7 @@ distributed and fault-tolerant systems, while also being successfully used in we
 and the embedded software domain.” - http://elixir-lang.org
 ```
 
-## Code examples highlighting functional concepts
+## Contrived code examples highlighting functional concepts
 * **Anonymous/First-class functions**
   * https://github.com/kblake/functional-programming/tree/master/code/anonymous
 * **Pattern Matching**
