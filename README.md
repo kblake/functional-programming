@@ -77,7 +77,8 @@ and the embedded software domain.” - http://elixir-lang.org
 * **Multi-bodied functions**
   * https://github.com/kblake/functional-programming/tree/master/code/multiple_bodies
 * **Higher-order functions**
-  * link to code example
+  * Functions that can take functions in as arguments or functions that return functions
+  * https://github.com/kblake/functional-programming/tree/master/code/higher_order
 * **Immutability vs State**
   * link to code example
 * **Composition**
@@ -102,3 +103,4 @@ and the embedded software domain.” - http://elixir-lang.org
 * https://github.com/hemanth/functional-programming-jargon
 * http://www.infoq.com/presentations/functional-declarative-style
 * http://michaelfeathers.typepad.com/michael_feathers_blog/2012/03/tell-above-and-ask-below-hybridizing-oo-and-functional-design.html
+* http://eloquentjavascript.net/05_higher_order.html

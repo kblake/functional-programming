@@ -1,6 +1,3 @@
-# Higher-order functions
-# Receive and return functions
-
 times2 = fn x -> x * 2 end
 times3 = fn x -> x * 3 end
 times4 = fn x -> x * 4 end
@@ -16,5 +13,3 @@ nums = [10,39,31,83]
 IO.inspect Enum.map nums, times2
 IO.inspect Enum.map nums, times3
 IO.inspect Enum.map nums, times4
-
-:ok
