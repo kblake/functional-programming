@@ -80,7 +80,18 @@ and the embedded software domain.” - http://elixir-lang.org
   * Functions that can take functions in as arguments or functions that return functions
   * https://github.com/kblake/functional-programming/tree/master/code/higher_order
 * **Immutability vs State**
-  * link to code example
+```
+Doing the maths:
+(value2 * (value1 + value3)) + value1 * value2
+
+if value1 = 4, value2 = 2, value3 = 0
+then result should be 16
+
+(2 * (4 + 0)) + 4 * 2
+8 + 8
+16
+```
+  * https://github.com/kblake/functional-programming/tree/master/code/immutability
 * **Composition**
   * link to code example
 * **Enumerables**
