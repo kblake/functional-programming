@@ -79,7 +79,7 @@ and the embedded software domain.” - http://elixir-lang.org
 * **Higher-order functions**
   * Functions that can take functions in as arguments or functions that return functions
   * https://github.com/kblake/functional-programming/tree/master/code/higher_order
-* **Immutability vs State**
+* **Side-effects & State**
 ```
 Doing the maths:
 (value2 * (value1 + value3)) + value1 * value2
@@ -91,7 +91,7 @@ then result should be 16
 8 + 8
 16
 ```
-  * https://github.com/kblake/functional-programming/tree/master/code/immutability
+  * https://github.com/kblake/functional-programming/tree/master/code/side_effects
 * **Composition**
   * link to code example
 * **Enumerables**
