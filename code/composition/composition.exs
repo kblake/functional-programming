@@ -1,7 +1,3 @@
-# Composition
-# piping
-# "Transforming Data"
-
 # filing = prepare_filing(sales_tax(Orders.for_customers(DB.find_customers), 2016))
 # inject_blank_urls(markdownify(task.formatted_task_text)).html_safe
 

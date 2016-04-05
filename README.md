@@ -93,11 +93,16 @@ then result should be 16
 ```
   * https://github.com/kblake/functional-programming/tree/master/code/side_effects
 * **Composition**
-  * link to code example
+  * Combining simple functions to make more complicated ones
+  * The result of one function is passed to the next; the result of the last function call is the result of the whole
+  * Piping
+  * Transforming data
+  * https://github.com/kblake/functional-programming/tree/master/code/composition
+* **Currying**
+  * https://github.com/kblake/functional-programming/tree/master/code/currying
 * **Enumerables**
-  * link to code example
+  * https://github.com/kblake/functional-programming/tree/master/code/enumerables
 * **...and more!!**
-  * link to code example
 
 ## Sources
 * http://nerd.kelseyinnis.com/blog/2012/12/17/slides-from-learning-functional-programming-without-growing-a-neckbeard/
@@ -115,3 +120,4 @@ then result should be 16
 * http://www.infoq.com/presentations/functional-declarative-style
 * http://michaelfeathers.typepad.com/michael_feathers_blog/2012/03/tell-above-and-ask-below-hybridizing-oo-and-functional-design.html
 * http://eloquentjavascript.net/05_higher_order.html
+* https://en.wikipedia.org/wiki/Function_composition_(computer_science)
