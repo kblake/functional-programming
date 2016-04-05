@@ -80,6 +80,7 @@ and the embedded software domain.” - http://elixir-lang.org
   * Functions that can take functions in as arguments or functions that return functions
   * https://github.com/kblake/functional-programming/tree/master/code/higher_order
 * **Side-effects & State**
+  * https://github.com/kblake/functional-programming/tree/master/code/side_effects
 ```
 Doing the maths:
 (value2 * (value1 + value3)) + value1 * value2
@@ -91,7 +92,7 @@ then result should be 16
 8 + 8
 16
 ```
-  * https://github.com/kblake/functional-programming/tree/master/code/side_effects
+
 * **Composition**
   * Combining simple functions to make more complicated ones
   * The result of one function is passed to the next; the result of the last function call is the result of the whole
