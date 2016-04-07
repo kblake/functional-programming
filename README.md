@@ -80,6 +80,8 @@ and the embedded software domain.” - http://elixir-lang.org
   * Functions that can take functions in as arguments or functions that return functions
   * https://github.com/kblake/functional-programming/tree/master/code/higher_order
 * **Side-effects & State**
+  * take data, copy it, alter copy, return it
+  * always return the same output for any given input
   * https://github.com/kblake/functional-programming/tree/master/code/side_effects
 ```
 Doing the maths:
@@ -123,3 +125,4 @@ then result should be 16
 * http://michaelfeathers.typepad.com/michael_feathers_blog/2012/03/tell-above-and-ask-below-hybridizing-oo-and-functional-design.html
 * http://eloquentjavascript.net/05_higher_order.html
 * https://en.wikipedia.org/wiki/Function_composition_(computer_science)
+* http://version2beta.com/articles/functional_first_development/
