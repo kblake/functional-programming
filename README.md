@@ -101,9 +101,8 @@ then result should be 16
   * https://github.com/kblake/functional-programming/tree/master/code/composition
 * **Enumerables**
   * https://github.com/kblake/functional-programming/tree/master/code/enumerables
-* **Partial function application**
+* **Partial function applications**
   * Elixir does not have built-in **currying** like Haskell or Scala
-  * 
   * https://github.com/kblake/functional-programming/tree/master/code/currying
 * **...and more!!**
 
