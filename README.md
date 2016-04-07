@@ -99,10 +99,12 @@ then result should be 16
   * Piping
   * Transforming data
   * https://github.com/kblake/functional-programming/tree/master/code/composition
-* **Currying**
-  * https://github.com/kblake/functional-programming/tree/master/code/currying
 * **Enumerables**
   * https://github.com/kblake/functional-programming/tree/master/code/enumerables
+* **Partial function application**
+  * Elixir does not have built-in **currying** like Haskell or Scala
+  * 
+  * https://github.com/kblake/functional-programming/tree/master/code/currying
 * **...and more!!**
 
 ## Sources
