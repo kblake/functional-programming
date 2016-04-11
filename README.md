@@ -7,7 +7,7 @@ Material to introduce functional programming using the Elixir language
 * Lead you to pursue a functional language more in-depth
 
 ## Paradigm evolution
-* Mathetmatics (lambda calculus)
+* Mathematics (lambda calculus)
 * Computer science
 * spawn of languages and paradigms
   * functional, procedural, imperative, declarative, object-oriented programming (OOP)
