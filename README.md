@@ -127,3 +127,4 @@ then result should be 16
 * http://eloquentjavascript.net/05_higher_order.html
 * https://en.wikipedia.org/wiki/Function_composition_(computer_science)
 * http://version2beta.com/articles/functional_first_development/
+* [Basics of functional Programming by Siddharth Kulkarni](https://youtu.be/iSs3LdUZziU)
