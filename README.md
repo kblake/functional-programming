@@ -44,8 +44,9 @@ and unpredictable side effects.” - Dave Thomas
   * Avoid race conditions
 * **Higher-order functions**
   * Functions can receive functions as arguments and return functions
-* Where is my *for* loop?
+* **Where is my *for* loop?**
   * map, reduct, filter, reject, take, etc.
+  <img src="https://pbs.twimg.com/media/Cfxot-NUYAAZM3c.jpg" />
 
 ## Some (impure and pure) functional languages
 * LISP
