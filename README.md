@@ -128,3 +128,5 @@ then result should be 16
 * https://en.wikipedia.org/wiki/Function_composition_(computer_science)
 * http://version2beta.com/articles/functional_first_development/
 * [Basics of functional Programming by Siddharth Kulkarni](https://youtu.be/iSs3LdUZziU)
+* https://engineering.pinterest.com/blog/re-architecting-pinterests-ios-app
+* https://medium.com/@sarahabimay/writing-oo-in-a-functional-state-of-mind-5d6f56052d23#.b63k5pqo2
