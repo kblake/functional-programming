@@ -107,7 +107,11 @@ then result should be 16
 * **Partial function applications**
   * Elixir does not have built-in **currying** like Haskell or Scala
   * https://github.com/kblake/functional-programming/tree/master/code/partial_application
-* **...and more!!**
+* **Examples**
+  * OOP to Functional
+    * Shopping Cart
+      * OOP: https://github.com/kblake/functional-programming/blob/master/code/examples/shopping_cart.rb
+      * Functional: https://github.com/kblake/functional-programming/blob/master/code/examples/shopping_cart.exs
 
 ## Sources
 * http://nerd.kelseyinnis.com/blog/2012/12/17/slides-from-learning-functional-programming-without-growing-a-neckbeard/
