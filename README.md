@@ -112,6 +112,9 @@ then result should be 16
     * Shopping Cart
       * OOP: https://github.com/kblake/functional-programming/blob/master/code/examples/shopping_cart.rb
       * Functional: https://github.com/kblake/functional-programming/blob/master/code/examples/shopping_cart.exs
+    * Coin game
+      * OOP: https://github.com/kblake/functional-programming/blob/master/code/examples/coin_game.rb
+      * Functional: https://github.com/kblake/functional-programming/blob/master/code/examples/coin_game.exs
     * Add more examples...
 
 ## Sources
