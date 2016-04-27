@@ -140,3 +140,4 @@ then result should be 16
 * https://medium.com/@sarahabimay/writing-oo-in-a-functional-state-of-mind-5d6f56052d23#.b63k5pqo2
 * http://blog.patrikstorm.com/function-currying-in-elixir
 * **TODO**: Read about Category Theory - https://bartoszmilewski.com/2014/10/28/category-theory-for-programmers-the-preface/
+* https://medium.com/@jugoncalves/functional-programming-should-be-your-1-priority-for-2015-47dd4641d6b9#.jzimhgjpv
