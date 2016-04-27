@@ -136,3 +136,4 @@ then result should be 16
 * https://engineering.pinterest.com/blog/re-architecting-pinterests-ios-app
 * https://medium.com/@sarahabimay/writing-oo-in-a-functional-state-of-mind-5d6f56052d23#.b63k5pqo2
 * http://blog.patrikstorm.com/function-currying-in-elixir
+* **TODO**: Read about Category Theory - https://bartoszmilewski.com/2014/10/28/category-theory-for-programmers-the-preface/
