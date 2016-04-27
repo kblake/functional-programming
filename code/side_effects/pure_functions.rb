@@ -14,6 +14,7 @@ puts new_name
 
 
 
+# Fix
 name = { first: "jane", last: "doe" }
 
 pure = -> name do
