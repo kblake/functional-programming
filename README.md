@@ -108,6 +108,8 @@ then result should be 16
   * Elixir does not have built-in **currying** like Haskell or Scala
   * https://github.com/kblake/functional-programming/tree/master/code/partial_application
 * **Examples**
+  * Parallel Map
+    * https://github.com/kblake/functional-programming/blob/master/code/examples/pmap.exs
   * OOP to Functional
     * Shopping Cart
       * OOP: https://github.com/kblake/functional-programming/blob/master/code/examples/shopping_cart.rb
