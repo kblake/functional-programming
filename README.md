@@ -29,6 +29,9 @@ and unpredictable side effects.” - Dave Thomas
   * Easy to reason about
   * reliable
   * pure
+    * don't modify variables outside of scope
+    * no side effects
+    * deterministic (reproduciable results)
 * **Data transformation**
   * ie. Unix pipes - `cat foo.log | grep bar | wc -l`
 * **No side-effects**
