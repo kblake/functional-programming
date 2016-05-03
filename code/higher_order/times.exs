@@ -1,6 +1,8 @@
-times2 = fn x -> x * 2 end
-times3 = fn x -> x * 3 end
-times4 = fn x -> x * 4 end
+times = fn x -> (fn y -> y * x end) end
+
+times2 = times.(2)
+times3 = times.(3)
+times4 = times.(4)
 
 perform = fn(fun, value) -> fun.(value) end
 
