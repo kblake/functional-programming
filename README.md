@@ -63,7 +63,7 @@ distributed and fault-tolerant systems, while also being successfully used in we
 and the embedded software domain.” - http://elixir-lang.org
 ```
 
-## Contrived code examples highlighting functional concepts
+## Approachable code examples that highlight functional concepts
 * **Anonymous/First-class functions**
   * https://github.com/kblake/functional-programming/tree/master/code/anonymous
 * **Pattern Matching**
@@ -118,7 +118,6 @@ then result should be 16
     * Coin game
       * OOP: https://github.com/kblake/functional-programming/blob/master/code/examples/coin_game.rb
       * Functional: https://github.com/kblake/functional-programming/blob/master/code/examples/coin_game.exs
-    * Add more examples...
 
 ## Sources
 * http://nerd.kelseyinnis.com/blog/2012/12/17/slides-from-learning-functional-programming-without-growing-a-neckbeard/
