@@ -103,10 +103,10 @@ then result should be 16
   * Elixir does not have built-in **currying** like Haskell or Scala
   * https://github.com/kblake/functional-programming/tree/master/code/partial_application
 * **Recursion**
+  * https://www.google.com/?gws_rd=ssl#safe=active&q=recursion
   * "Recursion in computer science is a method where the solution to a problem depends on solutions to smaller instances of the same problem (as opposed to iteration). The approach can be applied to many types of problems, and recursion is one of the central ideas of computer science." - https://en.wikipedia.org/wiki/Recursion_(computer_science)
   * Looping in traditional languages often times mutate and change data in sometimes unsuspecting ways
   * There is a lot of CS material out there that goes into depth on why this is true. Also you'll find recursion mentioned with terms such as Binary Trees and Binary Search Trees
-  * https://www.google.com/?gws_rd=ssl#safe=active&q=recursion
   * https://github.com/kblake/functional-programming/tree/master/code/recursion
 * **Examples**
   * Parallel Map
