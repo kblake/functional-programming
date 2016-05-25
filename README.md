@@ -146,3 +146,8 @@ then result should be 16
 * http://blog.patrikstorm.com/function-currying-in-elixir
 * **TODO**: Read about Category Theory - https://bartoszmilewski.com/2014/10/28/category-theory-for-programmers-the-preface/
 * https://medium.com/@jugoncalves/functional-programming-should-be-your-1-priority-for-2015-47dd4641d6b9#.jzimhgjpv
+* https://blog.codeship.com/statefulness-in-elixir/
+* http://www.pebra.net/blog/2015/12/24/fun-prog-1/
+* http://novarac.com/recursion-in-the-wild-elixir/
+* http://trevork-csc148.blogspot.com/2014/03/recursion.html
+* https://rosettacode.org/wiki/Walk_a_directory/Recursively#Elixir
