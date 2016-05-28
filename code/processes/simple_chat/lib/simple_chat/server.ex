@@ -15,15 +15,22 @@ defmodule SimpleChat.Server do
     List.delete recips, sender
   end
 
-  def pid_for registered_name do
+  defp pid_for registered_name do
     :global.whereis_name(registered_name)
+  end
+
+  defp format_sender sender do
+    sender
+    |> Atom.to_string
+    |> String.split("@")
+    |> List.first
   end
 
   def message_dispenser do
     receive do
       {:all, sender, message} ->
         Enum.each recipients_for(sender), fn node ->
-          send pid_for(node), {sender, message}
+          send pid_for(node), {format_sender(sender), message}
         end
         message_dispenser
     end
