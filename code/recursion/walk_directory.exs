@@ -1,5 +1,5 @@
 defmodule Directory do
-  def walk(dir) do
+  def walk(dir \\ ".") do
     Enum.each(File.ls!(dir), fn file ->
       unless hidden_file?(file) do
         file_name = "#{dir}/#{file}"
@@ -24,4 +24,5 @@ defmodule Directory do
   end
 end
 
-Directory.walk "/Users/karmenblake/Projects/elixir-stuff/functional-programming"
+# Directory.walk "/Users/karmenblake/Projects/elixir-stuff/functional-programming"
+Directory.walk
