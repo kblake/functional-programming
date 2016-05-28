@@ -1,0 +1,2 @@
+defmodule SimpleChat do
+end
