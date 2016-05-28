@@ -1,20 +1,26 @@
 # SimpleChat
 
-**TODO: Add description**
+**Basic chat app demonstrating processes and distribution features of Elixir (Erlang)**
 
-## Installation
+## Usage
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed as:
+  1. Server
 
-  1. Add simple_chat to your list of dependencies in `mix.exs`:
+        iex --sname server -S mix
+        iex(server@yourcomputername)1> SimpleChat.Server.start
 
-        def deps do
-          [{:simple_chat, "~> 0.0.1"}]
-        end
+  2. Client(s) - each client functioning in different terminal sessions
 
-  2. Ensure simple_chat is started before your application:
-
-        def application do
-          [applications: [:simple_chat]]
-        end
+        iex --sname client1 -S mix
+        clien1> SimpleChat.Client.join_server :"server@yourcomputername"
+        
+        iex --sname client2 -S mix
+        client2> SimpleChat.Client.join_server :"server@yourcomputername"
+        
+        iex --sname client3 -S mix
+        client3> SimpleChat.Client.join_server :"server@yourcomputername"
+        
+        client1> SimpleChat.Client.send_message "sup sup"
+        client2> client1: sup sup
+        client3> client1: sup sup
 
