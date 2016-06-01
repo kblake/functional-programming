@@ -46,12 +46,11 @@ defmodule SlashChat.Server do
 
   def message_dispenser do
     receive do
-      {:all, sender, message} ->
-          if String.starts_with?(message, "/") do
-            SlashChat.Command.process(sender, message)
-          else
-            broadcast(sender, message)
-          end
+      {sender, message} ->
+        cond do
+          message =~ ~r/^\// -> SlashChat.Command.process(sender, message)
+          true -> send_message(sender, "Invalid command", server_name)
+        end
         message_dispenser
     end
   end

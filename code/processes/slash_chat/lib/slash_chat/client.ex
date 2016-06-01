@@ -10,7 +10,7 @@ defmodule SlashChat.Client do
   end
 
   def send_message message do
-    send server, {:all, Node.self, message}
+    send server, {Node.self, message}
     :ok
   end
 

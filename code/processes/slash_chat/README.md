@@ -20,17 +20,23 @@
         iex --sname client3 -S mix
         client3> SlashChat.Client.join_server :"server@yourcomputername"
         
-  3. Client(s) - can send a private message to another client
+  3. Client(s) - can send a message to every other client
+
+        client1> SlashChat.Client.send_message "/all sup sup"
+        client2> client1: sup sup
+        client3> client1: sup sup
+
+  4. Client(s) - can send a private message to another client
 
         client1> SlashChat.Client.send_message "/pm client2@yourcomputername sup sup"
         client2> client1: sup sup
         client3> no message
 
-  4. Client(s) - can get feedback about an invalid command
+  5. Client(s) - can get feedback about an invalid command
 
         client1> SlashChat.Client.send_message "/dance"
 
-  5. Client(s) - can exit the network
+  6. Client(s) - can exit the network
 
         client1> SlashChat.Client.send_message "/exit"
 
