@@ -112,6 +112,10 @@ then result should be 16
     * If the very last thing a function does is call itself, there is no need to make the call. The runtime can jump back to the start of the function. The recursive call MUST be the last function executed. You may need to accumulate the results as you go.
     * Technique that allows the compiler to call a function without using any additional stack space
   * https://github.com/kblake/functional-programming/tree/master/code/recursion
+* **Concurrency**
+  * **Nodes** (distributed chat cluster)
+    * Simple Chat - https://github.com/kblake/functional-programming/tree/master/code/concurrency/nodes/simple_chat
+    * Slash Chat - https://github.com/kblake/functional-programming/tree/master/code/concurrency/nodes/slash_chat
 * **Examples**
   * Parallel Map
     * https://github.com/kblake/functional-programming/blob/master/code/examples/pmap.exs
