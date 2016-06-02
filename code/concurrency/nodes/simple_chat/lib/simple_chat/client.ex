@@ -9,6 +9,15 @@ defmodule SimpleChat.Client do
     :global.whereis_name(SimpleChat.Server.server_name)
   end
 
+  def friends do
+    SimpleChat.Server.recipients_for Node.self
+  end
+
+  def send_to friend, message do
+    send server, {:private_message, Node.self, friend, message}
+    :ok
+  end
+
   def send_message message do
     send server, {:all, Node.self, message}
     :ok

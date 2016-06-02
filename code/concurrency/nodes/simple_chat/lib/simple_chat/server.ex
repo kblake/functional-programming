@@ -29,10 +29,17 @@ defmodule SimpleChat.Server do
   def message_dispenser do
     receive do
       {:all, sender, message} ->
-        Enum.each recipients_for(sender), fn node ->
-          send pid_for(node), {format_sender(sender), message}
+        Enum.each recipients_for(sender), fn friend ->
+          send_message(friend, sender, message)
         end
         message_dispenser
+      {:private_message, sender, friend, message} ->
+        send_message(friend, sender, message)
+        message_dispenser
     end
+  end
+
+  defp send_message(friend, sender, message) do
+    send pid_for(friend), {format_sender(sender), message}
   end
 end
