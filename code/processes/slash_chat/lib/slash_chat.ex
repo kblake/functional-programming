@@ -1,0 +1,2 @@
+defmodule SlashChat do
+end
