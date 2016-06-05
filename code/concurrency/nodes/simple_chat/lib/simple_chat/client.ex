@@ -1,5 +1,6 @@
 defmodule SimpleChat.Client do
-  def join_server server_id do
+  def join_server server_id, cookie \\ :"cookiemonster" do
+    Node.set_cookie(Node.self, cookie)
     pid = spawn(__MODULE__, :message_listener, [])
     Node.connect server_id
     :global.register_name(Node.self, pid)
