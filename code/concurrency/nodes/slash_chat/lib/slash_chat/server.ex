@@ -31,11 +31,8 @@ defmodule SlashChat.Server do
   end
 
   def release sender do
-    broadcast(sender, "Has left the network.")
-    # This unregister isn't working as I want it to yet.
-    # I would like any more broadcasts to avoid notifying the
-    # sender that is exiting.
-    #:global.unregister_name(sender)
+    :global.unregister_name(sender)
+    Node.disconnect(sender)
   end
 
   def broadcast sender, message do

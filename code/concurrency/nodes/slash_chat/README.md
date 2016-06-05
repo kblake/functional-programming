@@ -35,10 +35,10 @@
   5. Client(s) - can get feedback about an invalid command
 
         client1> SlashChat.Client.send_message "/dance"
-		client1> :chat_server: Invalid Command
+        client1> :chat_server: Invalid Command
 
   6. Client(s) - can exit the network
 
         client1> SlashChat.Client.send_message "/exit"
-		client2> client1: Has left the network
-		client3> client1: Has left the network
+        client2> client1: Has left the network
+        client3> client1: Has left the network
