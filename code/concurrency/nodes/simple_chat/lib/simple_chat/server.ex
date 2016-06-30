@@ -34,7 +34,7 @@ defmodule SimpleChat.Server do
         end
         message_dispenser
       {:private_message, sender, friend, message} ->
-        send_message(friend, sender, message)
+        send_message(friend, sender, message <> " (DM)")
         message_dispenser
     end
   end
