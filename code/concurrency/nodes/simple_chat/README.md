@@ -20,13 +20,13 @@
         iex --sname client3 -S mix
         client3> SimpleChat.Client.join_server :"server@yourcomputername"
         
-        client1> SimpleChat.Client.send_message "sup sup"
+        client1> SimpleChat.Client.broadcast "sup sup"
         client2> client1: sup sup
         client3> client1: sup sup
         
         client1> SimpleChat.Client.friends
         client1> [:"client2@yourcomputername", :"client3@yourcomputername"]
         
-        client1> SimpleChat.Client.send_to :"client3@yourcomputername", "hey there, you!"
+        client1> SimpleChat.Client.direct_message :"client3@yourcomputername", "hey there, you!"
         client3> client1: hey there, you!
 

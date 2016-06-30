@@ -14,12 +14,12 @@ defmodule SimpleChat.Client do
     SimpleChat.Server.recipients_for Node.self
   end
 
-  def send_to friend, message do
+  def direct_message friend, message do
     send server, {:private_message, Node.self, friend, message}
     :ok
   end
 
-  def send_message message do
+  def broadcast message do
     send server, {:all, Node.self, message}
     :ok
   end
