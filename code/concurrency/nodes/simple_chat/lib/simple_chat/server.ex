@@ -36,6 +36,7 @@ defmodule SimpleChat.Server do
       {:private_message, sender, friend, message} ->
         send_message(friend, sender, message <> " (DM)")
         message_dispenser
+      _ -> "The chat server does not know how to handle that message"
     end
   end
 
