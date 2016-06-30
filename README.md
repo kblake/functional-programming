@@ -115,6 +115,7 @@ then result should be 16
 * **Concurrency**
   * **Nodes** (distributed chat cluster)
     * Simple Chat - https://github.com/kblake/functional-programming/tree/master/code/concurrency/nodes/simple_chat
+      * Steps for building the chat client: https://gist.github.com/kblake/63db44d13a933d6811d80d5ea5c2bd2f
     * Slash Chat - https://github.com/kblake/functional-programming/tree/master/code/concurrency/nodes/slash_chat
 * **Examples**
   * Parallel Map
