@@ -5,9 +5,10 @@
 ## Usage
 
   1. Server
-
+        ```
         iex --sname server -S mix
         iex(server@yourcomputername)1> SimpleChat.Server.start
+        ```
 
   2. Client(s) - each client functioning in different terminal sessions
 ```
