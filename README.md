@@ -49,8 +49,7 @@ and unpredictable side effects.” - Dave Thomas
   * Functions can receive functions as arguments and return functions
 * **Where is my *for* loop?**
   * recursion
-  * map, reduct, filter, reject, take, etc.
-  <img src="https://pbs.twimg.com/media/Cfxot-NUYAAZM3c.jpg" />
+  * map, reduce, filter, reject, take, etc.
 
 ## Some (impure and pure) functional languages
 * LISP, Scheme, Clojure, Erlang, Scala, OCaml, Haskell, F#, Elm, Elixir
@@ -79,17 +78,17 @@ and the embedded software domain.” - http://elixir-lang.org
   * take data, copy it, alter copy, return it
   * always return the same output for any given input
   * https://github.com/kblake/functional-programming/tree/master/code/side_effects
-```
-Doing the maths:
-(value2 * (value1 + value3)) + value1 * value2
+   ```
+   Doing the maths:
+   (value2 * (value1 + value3)) + value1 * value2
 
-if value1 = 4, value2 = 2, value3 = 0
-then result should be 16
+   if value1 = 4, value2 = 2, value3 = 0
+   then result should be 16
 
-(2 * (4 + 0)) + 4 * 2
-8 + 8
-16
-```
+   (2 * (4 + 0)) + 4 * 2
+   8 + 8
+   16
+   ```
 
 * **Composition**
   * Combining simple functions to make more complicated ones
