@@ -15,13 +15,13 @@ Material to introduce functional programming using the Elixir language
 
 ## OOP limitations
 ```
-[W]e’re going to be living in a multicore, distributed, concurrent — all the buzz words — world. 
-The conventional models we’ve been doing, the OO stuff… is not going to survive in that 
+[W]e’re going to be living in a multicore, distributed, concurrent — all the buzz words — world.
+The conventional models we’ve been doing, the OO stuff… is not going to survive in that
 kind of environment.” - Dave Thomas
 ```
 ```
-“OOP promised a cure for the scourge of software complexity. …its weaknesses have become 
-increasingly apparent. Spreading state all over the place leads to concurrency issues 
+“OOP promised a cure for the scourge of software complexity. …its weaknesses have become
+increasingly apparent. Spreading state all over the place leads to concurrency issues
 and unpredictable side effects.” - Dave Thomas
 ```
 ## Think in Functions not Objects
@@ -54,12 +54,12 @@ and unpredictable side effects.” - Dave Thomas
 
 ## Some (impure and pure) functional languages
 * LISP, Scheme, Clojure, Erlang, Scala, OCaml, Haskell, F#, Elm, Elixir
- 
+
 # Elixir
 ```
-“Elixir is a dynamic, functional language designed for building scalable and 
-maintainable applications. Elixir leverages the Erlang VM, known for running low-latency, 
-distributed and fault-tolerant systems, while also being successfully used in web development 
+“Elixir is a dynamic, functional language designed for building scalable and
+maintainable applications. Elixir leverages the Erlang VM, known for running low-latency,
+distributed and fault-tolerant systems, while also being successfully used in web development
 and the embedded software domain.” - http://elixir-lang.org
 ```
 
@@ -108,7 +108,7 @@ then result should be 16
   * "Recursion in computer science is a method where the solution to a problem depends on solutions to smaller instances of the same problem (as opposed to iteration). The approach can be applied to many types of problems, and recursion is one of the central ideas of computer science." - https://en.wikipedia.org/wiki/Recursion_(computer_science)
   * Looping in traditional languages often times mutate and change data in sometimes unsuspecting ways
   * There is a lot of CS material out there that goes into depth on why this is true. Also you'll find recursion mentioned with terms such as Binary Trees and Binary Search Trees
-  * **Tail-call Optimization** 
+  * **Tail-call Optimization**
     * If the very last thing a function does is call itself, there is no need to make the call. The runtime can jump back to the start of the function. The recursive call MUST be the last function executed. You may need to accumulate the results as you go.
     * Technique that allows the compiler to call a function without using any additional stack space
   * https://github.com/kblake/functional-programming/tree/master/code/recursion
@@ -127,6 +127,13 @@ then result should be 16
     * Coin game
       * OOP: https://github.com/kblake/functional-programming/blob/master/code/examples/coin_game.rb
       * Functional: https://github.com/kblake/functional-programming/blob/master/code/examples/coin_game.exs
+* **OTP**
+  * Genservers
+    * Shopping Cart
+      * https://github.com/kblake/functional-programming/blob/master/code/otp/shopping_cart_genservers.exs
+  * Supervision
+    * Shopping Cart with supervision
+      * https://github.com/kblake/functional-programming/blob/master/code/otp/shopping_cart_supervised.exs
 
 ## Sources
 * http://nerd.kelseyinnis.com/blog/2012/12/17/slides-from-learning-functional-programming-without-growing-a-neckbeard/
