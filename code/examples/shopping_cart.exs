@@ -25,13 +25,6 @@ defmodule Cart do
   end
 end
 
-
-# TODO: as exercise
-# give products uniq id
-# enable quantity for product
-# remove product from cart
-# decrement quantity of product
-# increase quantity of product
 defmodule App do
   def run do
     coffee = %Product{name: "coffee", price: 16.25}
