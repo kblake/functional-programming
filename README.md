@@ -132,7 +132,7 @@ then result should be 16
     * Shopping Cart
       * https://github.com/kblake/functional-programming/blob/master/code/otp/shopping_cart_genservers.exs
   * Supervision
-    * Shopping Cart with supervision
+    * Dynamic Supervision of products
       * https://github.com/kblake/functional-programming/blob/master/code/otp/shopping_cart_supervised.exs
 
 ## Sources
