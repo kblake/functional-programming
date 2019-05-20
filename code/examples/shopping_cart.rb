@@ -21,7 +21,7 @@ class Cart
   end
 
   def contents
-    @products.each do |product| 
+    @products.each do |product|
       puts "#{product.name}: $#{product.price}"
     end
   end
@@ -41,5 +41,7 @@ chocolate_syrup = Product.new("chocolate syrup", 2.23)
 
 cart = Cart.new
 cart.add_products([coffee, creamer, sugar, chocolate_syrup])
+
 cart.contents
+puts "---------------------"
 puts "Subtotal: $#{cart.sub_total}"

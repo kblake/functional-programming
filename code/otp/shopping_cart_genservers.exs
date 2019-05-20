@@ -2,7 +2,8 @@ defmodule Product do
   use GenServer
 
   def new(name, price) do
-    GenServer.start_link(__MODULE__, [name, price])
+    {:ok, product} = GenServer.start_link(__MODULE__, [name, price])
+    product
   end
 
   def init(args) do
@@ -30,6 +31,10 @@ defmodule Cart do
     GenServer.cast(:cart, {:add_product, product})
   end
 
+  def add_products(products) do
+    GenServer.cast(:cart, {:add_products, products})
+  end
+
   def contents, do: GenServer.call(:cart, :contents)
   def sub_total, do: GenServer.call(:cart, :sub_total)
 
@@ -41,6 +46,10 @@ defmodule Cart do
   def handle_cast({:add_product, product}, products) do
     products = [product | products]
     {:noreply, products}
+  end
+
+  def handle_cast({:add_products, new_products}, _products) do
+    {:noreply, new_products}
   end
 
   def handle_call(:contents, _from, products) do
@@ -64,16 +73,13 @@ defmodule Cart do
   end
 end
 
-{:ok, coffee} = Product.new("coffee", 16.25)
-{:ok, creamer} = Product.new("creamer", 3.5)
-{:ok, sugar} = Product.new("sugar", 2.25)
-{:ok, chocolate_syrup} = Product.new("chocolate syrup", 2.23)
+coffee = Product.new("coffee", 16.25)
+creamer = Product.new("creamer", 3.5)
+sugar = Product.new("sugar", 2.25)
+chocolate_syrup = Product.new("chocolate syrup", 2.23)
 
 Cart.new()
-Cart.add_product(coffee)
-Cart.add_product(creamer)
-Cart.add_product(sugar)
-Cart.add_product(chocolate_syrup)
+Cart.add_products([coffee, creamer, sugar, chocolate_syrup])
 
 Cart.contents()
 IO.puts "---------------------"
