@@ -130,6 +130,8 @@ and the embedded software domain.” - http://elixir-lang.org
   * Genservers
     * Shopping Cart
       * https://github.com/kblake/functional-programming/blob/master/code/otp/shopping_cart_genservers.exs
+    * Cache
+      * https://github.com/kblake/functional-programming/blob/master/code/otp/cache/gen_cache
   * Supervision
     * Dynamic Supervision of products
       * https://github.com/kblake/functional-programming/blob/master/code/otp/shopping_cart_supervised.exs
