@@ -1,21 +1,22 @@
 # GenCache
 
-**TODO: Add description**
+**Simple Cache using a GenServer to maintain state**
 
-## Installation
-
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `gen_cache` to your list of dependencies in `mix.exs`:
+## Usage
 
 ```elixir
-def deps do
-  [
-    {:gen_cache, "~> 0.1.0"}
-  ]
-end
+iex -S mix
+
+> GenCache.contents()
+%{}
+
+> GenCache.add("id1", "foo")
+> GenCache.add("id1", "bar")
+
+> GenCache.contents()
+%{"id1" => "foo", "id2" => "bar"}
+
+> GenCache.remove("id1")
+> GenCache.contents()
+%{"id2" => "bar"}
 ```
-
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/gen_cache](https://hexdocs.pm/gen_cache).
-
