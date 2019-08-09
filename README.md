@@ -102,7 +102,6 @@ and the embedded software domain.” - http://elixir-lang.org
   * Elixir does not have built-in **currying** like Haskell or Scala
   * https://github.com/kblake/functional-programming/tree/master/code/partial_application
 * ### Recursion
-  <img src="http://1.bp.blogspot.com/-ipe--pLB7_4/UxKyf6KFD9I/AAAAAAAAAL8/9A91A01cCdk/s1600/11e2e0de282ef4ad1ae93ac9ab508b3b590293527.png" />
   * https://www.google.com/?gws_rd=ssl#safe=active&q=recursion
   * "Recursion in computer science is a method where the solution to a problem depends on solutions to smaller instances of the same problem (as opposed to iteration). The approach can be applied to many types of problems, and recursion is one of the central ideas of computer science." - https://en.wikipedia.org/wiki/Recursion_(computer_science)
   * Looping in traditional languages often times mutate and change data in sometimes unsuspecting ways
