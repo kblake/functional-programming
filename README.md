@@ -24,7 +24,7 @@ kind of environment.” - Dave Thomas
 increasingly apparent. Spreading state all over the place leads to concurrency issues
 and unpredictable side effects.” - Dave Thomas
 ```
-## Think in Functions not Objects
+## Think in Functions
 * **Functions**
   * Easy to reason about
   * reliable
