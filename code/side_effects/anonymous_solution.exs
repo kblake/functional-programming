@@ -7,16 +7,17 @@
 # 8 + 8
 # 16
 
-add = fn (num1, num2) -> num1 + num2 end
-multiply = fn (num1, num2) -> num1 * num2 end
+add = fn num1, num2 -> num1 + num2 end
+multiply = fn num1, num2 -> num1 * num2 end
 
 value1 = 4
 value2 = 2
 value3 = 0
 
-result = add.(
-  multiply.(value2, add.(value1, value3)),
-  multiply.(value1, value2)
-)
+result =
+  add.(
+    multiply.(value2, add.(value1, value3)),
+    multiply.(value1, value2)
+  )
 
-IO.puts result
+IO.puts(result)

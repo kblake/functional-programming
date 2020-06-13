@@ -2,9 +2,9 @@
 # and turning it into a sequence of functions that have an arity of 1
 
 add = fn x ->
-	fn y ->
-		x + y
-	end
+  fn y ->
+    x + y
+  end
 end
 
 # Tell the function to add 2 to the arguement
@@ -12,4 +12,4 @@ add2 = add.(2)
 
 # Add 2 to 4
 add2.(4)
-#=> 6
+# => 6

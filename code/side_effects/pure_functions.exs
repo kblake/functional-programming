@@ -1,4 +1,4 @@
-name = %{ first: "jane", last: "doe" }
+name = %{first: "jane", last: "doe"}
 
 pure = fn name ->
   # Map.merge does not alter original
@@ -7,8 +7,8 @@ end
 
 new_name = pure.(name)
 
-IO.puts "Pure function - original is not altered"
-IO.inspect name
-IO.inspect new_name
+IO.puts("Pure function - original is not altered")
+IO.inspect(name)
+IO.inspect(new_name)
 
 :ok

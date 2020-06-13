@@ -55,19 +55,20 @@ defmodule Cart do
   def handle_call(:contents, _from, products) do
     for pid <- products do
       pid
-      |> Product.data
-      |> Product.info
-      |> IO.puts
+      |> Product.data()
+      |> Product.info()
+      |> IO.puts()
     end
 
     {:reply, products, products}
   end
 
   def handle_call(:sub_total, _from, products) do
-    sum = products
-    |> Enum.map(& Product.data(&1))
-    |> Enum.map(& &1.price)
-    |> Enum.sum
+    sum =
+      products
+      |> Enum.map(&Product.data(&1))
+      |> Enum.map(& &1.price)
+      |> Enum.sum()
 
     {:reply, sum, products}
   end
@@ -82,5 +83,5 @@ Cart.new()
 Cart.add_products([coffee, creamer, sugar, chocolate_syrup])
 
 Cart.contents()
-IO.puts "---------------------"
-IO.puts "Subtotal: $#{Cart.sub_total()}"
+IO.puts("---------------------")
+IO.puts("Subtotal: $#{Cart.sub_total()}")

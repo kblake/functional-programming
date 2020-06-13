@@ -1,6 +1,6 @@
 greet = fn ->
-  IO.puts "Hello World"
-  IO.puts "blah"
+  IO.puts("Hello World")
+  IO.puts("blah")
 end
 
 greet.()

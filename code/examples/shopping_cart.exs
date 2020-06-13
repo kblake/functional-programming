@@ -14,14 +14,14 @@ defmodule Cart do
   end
 
   def contents(cart) do
-    Enum.each cart.products, fn product ->
-      IO.puts "#{product.name}: $#{product.price}"
-    end
+    Enum.each(cart.products, fn product ->
+      IO.puts("#{product.name}: $#{product.price}")
+    end)
   end
 
   def sub_total(cart) do
-    prices = Enum.map cart.products, fn product -> product.price end
-    Enum.sum prices
+    prices = Enum.map(cart.products, fn product -> product.price end)
+    Enum.sum(prices)
   end
 end
 
@@ -36,8 +36,8 @@ defmodule App do
     cart = Cart.add_products(cart, [coffee, creamer, sugar, chocolate_syrup])
 
     Cart.contents(cart)
-    IO.puts "Subtotal: $#{Cart.sub_total(cart)}"
+    IO.puts("Subtotal: $#{Cart.sub_total(cart)}")
   end
 end
 
-App.run
+App.run()

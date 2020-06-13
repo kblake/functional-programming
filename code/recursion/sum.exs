@@ -8,4 +8,4 @@ defmodule MathList do
   end
 end
 
-IO.puts MathList.sum_list([3,2,6])
+IO.puts(MathList.sum_list([3, 2, 6]))

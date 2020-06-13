@@ -17,9 +17,11 @@ defmodule FunctionalMath do
   end
 end
 
-result = FunctionalMath.add(
-  FunctionalMath.multiply(value2, FunctionalMath.add(value1, value3)),
-  FunctionalMath.multiply(value1, value2)
-)
+result =
+  FunctionalMath.add(
+    FunctionalMath.multiply(value2, FunctionalMath.add(value1, value3)),
+    FunctionalMath.multiply(value1, value2)
+  )
 
-IO.puts result # ==> 16, correct answer
+# ==> 16, correct answer
+IO.puts(result)

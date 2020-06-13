@@ -4,11 +4,11 @@ defmodule FactorialNoTail do
   def factorial(0), do: 1
 
   def factorial(n) do
-    n * factorial(n-1)
+    n * factorial(n - 1)
   end
 end
 
-IO.puts FactorialNoTail.factorial(10)
+IO.puts(FactorialNoTail.factorial(10))
 
 defmodule FactorialTailRecursive do
   def factorial(n), do: factorial(n, 1)
@@ -16,8 +16,8 @@ defmodule FactorialTailRecursive do
   defp factorial(0, accumulator), do: accumulator
 
   defp factorial(n, accumulator) do
-    factorial(n-1, accumulator * n)
+    factorial(n - 1, accumulator * n)
   end
 end
 
-IO.puts FactorialTailRecursive.factorial(10)
+IO.puts(FactorialTailRecursive.factorial(10))

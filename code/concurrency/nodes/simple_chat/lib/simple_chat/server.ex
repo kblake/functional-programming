@@ -10,37 +10,41 @@ defmodule SimpleChat.Server do
     @server_name
   end
 
-  def recipients_for sender do
-    recips = List.delete :global.registered_names, server_name
-    List.delete recips, sender
+  def recipients_for(sender) do
+    recips = List.delete(:global.registered_names(), server_name)
+    List.delete(recips, sender)
   end
 
-  defp pid_for registered_name do
+  defp pid_for(registered_name) do
     :global.whereis_name(registered_name)
   end
 
-  defp format_sender sender do
+  defp format_sender(sender) do
     sender
-    |> Atom.to_string
+    |> Atom.to_string()
     |> String.split("@")
-    |> List.first
+    |> List.first()
   end
 
   def message_dispenser do
     receive do
       {:all, sender, message} ->
-        Enum.each recipients_for(sender), fn friend ->
+        Enum.each(recipients_for(sender), fn friend ->
           send_message(friend, sender, message)
-        end
+        end)
+
         message_dispenser
+
       {:private_message, sender, friend, message} ->
         send_message(friend, sender, message <> " (DM)")
         message_dispenser
-      _ -> "The chat server does not know how to handle that message"
+
+      _ ->
+        "The chat server does not know how to handle that message"
     end
   end
 
   defp send_message(friend, sender, message) do
-    send pid_for(friend), {format_sender(sender), message}
+    send(pid_for(friend), {format_sender(sender), message})
   end
 end

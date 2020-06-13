@@ -17,13 +17,13 @@ defmodule FunCache do
 end
 
 cache = FunCache.init()
-IO.inspect cache
+IO.inspect(cache)
 
 cache = FunCache.add(cache, "foo", "bar")
 cache = FunCache.add(cache, "baz", "lala")
-IO.inspect cache
+IO.inspect(cache)
 
-IO.puts FunCache.get(cache, "foo")
+IO.puts(FunCache.get(cache, "foo"))
 
 cache = FunCache.remove(cache, "foo")
-IO.inspect cache
+IO.inspect(cache)

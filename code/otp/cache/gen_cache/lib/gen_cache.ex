@@ -7,7 +7,7 @@ defmodule GenCache do
   end
 
   def contents do
-    GenServer.call(:gen_cache, :contents)  
+    GenServer.call(:gen_cache, :contents)
   end
 
   def add(id, name) do
@@ -15,11 +15,11 @@ defmodule GenCache do
   end
 
   def get(id) do
-    GenServer.call(:gen_cache, {:get, id})  
+    GenServer.call(:gen_cache, {:get, id})
   end
 
   def remove(id) do
-    GenServer.cast(:gen_cache, {:remove, id})  
+    GenServer.cast(:gen_cache, {:remove, id})
   end
 
   def init(_args) do
